@@ -10,7 +10,8 @@ number will turn red. A good reconstruction (on the right canvas) will give a
 low cost (not anomaly) while a bad reconstruction will give a high cost (anomaly).
 The anomaly threshold is set at 0.07: error > 0.07 --> anomaly.
 
-The flask app resides in the app _submodule_ and is hosted on heroku.
+The flask app resides in the app _submodule_ and is hosted on heroku. This app
+is responsive and has touch support (tested on Chrome).
 
 Data: The bowtie drawings used to train the autoencoder are a subset of
 Google's Quick, Draw! [dataset][data].
@@ -24,6 +25,8 @@ repository's notebooks.
 * Since Google's Quick, Draw! (preprocessed) dataset resembles the MNIST dataset
 in its simplicity, I decided to reuse the autoencoder architecture I used for
 the MNIST dataset on Google's dataset.
+
+I used this HTML Canvas tutorial in my flask app: https://dev.opera.com/articles/html5-canvas-painting/
 
 [data]: https://github.com/googlecreativelab/quickdraw-dataset
 [other repo]: https://github.com/chen10an/ml_algos_python/tree/master/autoencoder
