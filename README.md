@@ -1,5 +1,6 @@
 # anomalous_drawings
-Flask app that detects anomalous drawings: https://anomaly-bowtie.herokuapp.com
+Flask app that detects anomalous bowtie drawings: https://anomaly-bowtie.herokuapp.com
+(this link might load a bit slowly when you click it the first time)
 
 This app uses a simple autoencoder to perform anomaly detection on bowtie drawings.
 You can draw a bowtie (or anything) in the left canvas and the right canvas will
@@ -15,11 +16,14 @@ Data: The bowtie drawings used to train the autoencoder are a subset of
 Google's Quick, Draw! [dataset][data].
 
 Notebook that explains how anomaly detection can be performed via an autoencoder:
-[Bowtie Drawing Autoencoder]()
+[Bowtie Drawing Autoencoder](https://github.com/chen10an/anomalous_drawings/blob/master/Bowtie%20Drawing%20Autoencoder.ipynb)
 
 Notebooks about the autoencoder's implementation can be found in my
 ML algorithms [repository][other repo]. model.py and utils.py are based on this
 repository's notebooks.
+* Since Google's Quick, Draw! (preprocessed) dataset resembles the MNIST dataset
+in its simplicity, I decided to reuse the autoencoder architecture I used for
+the MNIST dataset on Google's dataset.
 
 [data]: https://github.com/googlecreativelab/quickdraw-dataset
 [other repo]: https://github.com/chen10an/ml_algos_python/tree/master/autoencoder
